@@ -1,4 +1,4 @@
-# ClassConnect 👨‍🏫👨‍👩‍👧
+# ClassConnect 👨‍🏫👨‍👩‍👧  https://linen-whale-164805.hostingersite.com/index.php
 
 ClassConnect est une plateforme web simple qui facilite la communication entre
 les **enseignants**, les **parents** et les **élèves du primaire**.
