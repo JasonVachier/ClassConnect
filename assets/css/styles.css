@@ -294,3 +294,84 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* À propos */
+.about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.about-list {
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.about-list li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.about-side {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #f5f0ff, #e9f4ff);
+    border-radius: 18px;
+    padding: 14px 16px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    font-size: 0.9rem;
+}
+
+.about-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.about-tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(66, 141, 255, 0.12);
+    font-size: 0.75rem;
+    color: #2f528f;
+}
+
+/* FAQ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.faq-item h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.faq-item p {
+    font-size: 0.9rem;
+}
+
+/* Responsive pour la partie À propos */
+@media (max-width: 768px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+}
