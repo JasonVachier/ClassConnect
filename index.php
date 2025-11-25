@@ -18,8 +18,8 @@ session_start();
         </div>
         <nav class="nav-links">
             <a href="index.php" class="active">Accueil</a>
-            <a href="#apropos">À propos</a>
-            <a href="#aide">Aide</a>
+            <a href="apropos.php">À propos</a>
+            <a href="faq.php">Aide</a>
         </nav>
         <div class="nav-actions">
             <a href="register.php" class="btn btn-pink">Créer un compte</a>
