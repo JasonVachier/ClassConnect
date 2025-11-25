@@ -122,8 +122,7 @@ if ($role === 'teacher') {
                                 </div>
                             </div>
                             <div>
-                                <!-- Plus tard : lien vers la page de la classe -->
-                                <a href="#" class="btn btn-outline">Ouvrir</a>
+                                <a href="class.php?id=<?= (int)$class['id'] ?>" class="btn btn-outline">Ouvrir</a>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -157,8 +156,7 @@ if ($role === 'teacher') {
                                 </div>
                             </div>
                             <div>
-                                <!-- Plus tard : lien vers la page de la classe -->
-                                <a href="#" class="btn btn-outline">Ouvrir</a>
+                                <a href="class.php?id=<?= (int)$class['id'] ?>" class="btn btn-outline">Ouvrir</a>
                             </div>
                         </div>
                     <?php endforeach; ?>
