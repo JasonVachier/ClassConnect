@@ -1,0 +1,296 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #2a2a2a;
+}
+
+/* Background dégradé */
+.gradient-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1d8ff, #f6b0ff, #ffb4b4);
+    background-attachment: fixed;
+}
+
+/* Topbar */
+.topbar {
+    padding: 16px 0;
+}
+
+.topbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text span:first-child {
+    color: #ff6ba3;
+}
+.logo-text span:last-child {
+    color: #428dff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.95rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    position: relative;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff6ba3, #428dff);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Boutons */
+.btn {
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-pink {
+    background: linear-gradient(135deg, #ff73b3, #ff8ad4);
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 115, 179, 0.4);
+}
+
+.btn-outline {
+    background: white;
+    color: #428dff;
+    border: 1px solid #c7ddff;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.btn.full-width {
+    width: 100%;
+}
+
+/* Layout principal */
+.main-container {
+    max-width: 900px;
+    margin: 24px auto 40px;
+    padding: 0 16px 40px;
+}
+
+/* Cartes */
+.card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 24px;
+    padding: 28px 32px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero h1 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.hero .highlight {
+    color: #428dff;
+}
+
+.hero .subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px;
+}
+
+.hero-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.hero-logo-card {
+    background: linear-gradient(135deg, #7fc6ff, #8fe0ff);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: white;
+    box-shadow: 0 20px 40px rgba(79, 164, 255, 0.45);
+}
+
+.hero-join h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join-form input {
+    border-radius: 999px;
+    border: none;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    background: #f3f6ff;
+    box-shadow: inset 0 0 0 1px rgba(180, 200, 255, 0.6);
+}
+
+.helper-text {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.helper-text a {
+    color: #ff6ba3;
+    text-decoration: none;
+}
+
+/* Steps section */
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.step-card {
+    background: linear-gradient(135deg, #a4d7ff, #fcb5ff);
+    border-radius: 20px;
+    padding: 18px 16px;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.85);
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+}
+
+/* Autres */
+.small-text {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+    padding-bottom: 16px;
+}
+
+/* Accessibilité */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .topbar-inner {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-main {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
